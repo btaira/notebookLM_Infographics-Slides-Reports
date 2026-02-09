@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotebookLM Infographics, Slides & Reports</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 60px;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .folders-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .folder-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.6s ease;
+        }
+
+        .folder-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .folder-icon {
+            width: 100%;
+            height: 180px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+        }
+
+        .folder-content {
+            padding: 25px;
+        }
+
+        .folder-content h2 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .folder-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            min-height: 60px;
+        }
+
+        .folder-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .folder-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            opacity: 0.8;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .folders-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 NotebookLM Resources</h1>
+            <p>Infographics, Slides & Reports</p>
+        </header>
+
+        <div class="folders-grid">
+            <!-- CPO and FiberShuffle -->
+            <div class="folder-card">
+                <div class="folder-icon">📡</div>
+                <div class="folder-content">
+                    <h2>CPO & FiberShuffle</h2>
+                    <p>Explore content related to Coherent Pluggable Optics and FiberShuffle technology for optical networking.</p>
+                    <a href="https://github.com/btaira/notebookLM_Infographics-Slides-Reports/tree/main/CPO-and-FiberShuffle" class="folder-link">View Folder →</a>
+                </div>
+            </div>
+
+            <!-- Corrosion -->
+            <div class="folder-card">
+                <div class="folder-icon">⚙️</div>
+                <div class="folder-content">
+                    <h2>Corrosion</h2>
+                    <p>Resources covering corrosion mechanisms, prevention, and management in various materials and environments.</p>
+                    <a href="https://github.com/btaira/notebookLM_Infographics-Slides-Reports/tree/main/Corrosion" class="folder-link">View Folder →</a>
+                </div>
+            </div>
+
+            <!-- NotebookLM Prompt -->
+            <div class="folder-card">
+                <div class="folder-icon">💡</div>
+                <div class="folder-content">
+                    <h2>NotebookLM Prompt</h2>
+                    <p>Prompt templates and guides for using NotebookLM to generate infographics, slides, and reports.</p>
+                    <a href="https://github.com/btaira/notebookLM_Infographics-Slides-Reports/tree/main/NotebookLM_Prompt" class="folder-link">View Folder →</a>
+                </div>
+            </div>
+
+            <!-- Optical Circuit Switching -->
+            <div class="folder-card">
+                <div class="folder-icon">🔌</div>
+                <div class="folder-content">
+                    <h2>Optical Circuit Switching</h2>
+                    <p>Technical materials on optical circuit switching technologies and applications in modern networks.</p>
+                    <a href="https://github.com/btaira/notebookLM_Infographics-Slides-Reports/tree/main/OpticalCircuitSwitching" class="folder-link">View Folder →</a>
+                </div>
+            </div>
+
+            <!-- Overcurrent Protection -->
+            <div class="folder-card">
+                <div class="folder-icon">⚡</div>
+                <div class="folder-content">
+                    <h2>Overcurrent Protection</h2>
+                    <p>Comprehensive guides on overcurrent protection devices, systems, and best practices for electrical safety.</p>
+                    <a href="https://github.com/btaira/notebookLM_Infographics-Slides-Reports/tree/main/Overcurrent-Protection" class="folder-link">View Folder →</a>
+                </div>
+            </div>
+
+            <!-- Touch Current -->
+            <div class="folder-card">
+                <div class="folder-icon">⚠️</div>
+                <div class="folder-content">
+                    <h2>Touch Current</h2>
+                    <p>Educational materials on touch current risks, safety standards, and protective measures in electrical systems.</p>
+                    <a href="https://github.com/btaira/notebookLM_Infographics-Slides-Reports/tree/main/Touch_Current" class="folder-link">View Folder →</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Repository: <a href="https://github.com/btaira/notebookLM_Infographics-Slides-Reports">btaira/notebookLM_Infographics-Slides-Reports</a></p>
+            <p style="margin-top: 10px; font-size: 0.9em;">Generated on 2026-02-09</p>
+        </footer>
+    </div>
+</body>
+</html>
